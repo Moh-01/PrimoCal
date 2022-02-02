@@ -22,7 +22,7 @@ body{
     border-style: outset;
     border-radius: 23px;
     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
-    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     /* text-shadow: 0px 0px 5px rgba(66,66,66,.75);*/
 }
 
 .css-input1 {
