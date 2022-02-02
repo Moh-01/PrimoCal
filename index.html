@@ -7,13 +7,12 @@
                 <h2 class="strokeme" > Primo Calculator </h2>
            </div>
 
-           <div class="container">
-
-                    <div class="col1" style="margin-top: 5em; margin-left:72em;">
-                        <input type="input" class="css-input center" placeholder="Current Primos" id='cpr' style="margin-bottom: 1em;" />
-                        <input type="input" class="css-input center" placeholder="Current Pity" id='cpt' style="margin-bottom: 1em;" />
-                        <input type="input" class="css-input center" placeholder="# of days - Next banner" id='ndb' style="margin-bottom: 1em;" />
-                        <input type="input" class="css-input center" placeholder="Blessing of Welkin Moon" id='wlkm' style="margin-bottom: 1em;" />
+           <div class="parent">
+                <div class="child">
+                        <input type="input" class="css-input center" placeholder="Current Primos" id='cpr' style="margin-bottom: 1em;"/>
+                        <input type="input" class="css-input center" placeholder="Current Pity" id='cpt' style="margin-bottom: 1em;">
+                        <input type="input" class="css-input center" placeholder="# of days - live banner" id='ndb'style="margin-bottom: 1em;/">
+                        <input type="input" class="css-input center" placeholder="Welkin Moon days" id='wlkm'style="margin-bottom: 1em;/">
                         
 
 
@@ -49,51 +48,41 @@
                             <option> 9 </option> 
                         </select>
 
-                        <!--
+                        <div>
+                            <ul class="tg-list">
+                                <li class="tg-list-item ">
+                                    <h4 class="spc"> Battel Pass? </h4>
+                                    <input class="tgl tgl-flip" id="bp" type="checkbox"/>
+                                    <label class="tgl-btn" data-tg-off="NO" data-tg-on="YES" for="bp"> </label>
+                                </li>
+            
+                                <li class="tg-list-item" >
+                                    <h4 class="spc"> Next banner? </h4>
+                                    <input class="tgl tgl-flip" id="nb" type="checkbox" />
+                                    <label class="tgl-btn" data-tg-off="NO" data-tg-on="YES" for="nb"> </label>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <input type="input" class="css-input center" placeholder="Abyss 9"  id='abs9' style="margin-bottom: 1em;" />
-                        <input type="input" class="css-input center" placeholder="Abyss 10" id='abs10' style="margin-bottom: 1em;" />
-                        <input type="input" class="css-input center" placeholder="Abyss 11" id='abs11' style="margin-bottom: 1em;" />
-                        <input type="input" class="css-input center" placeholder="Abyss 12" id='abs12' style="margin-bottom: 1em;" />
-                    -->
-                    </div>
+                        <div class="childe"> 
+                            <ul>
+                                <li>    
+                                    <div>
+                                        <h4 class="prim_icon" id="Total_pr" style="font-size: 3em; color: rgb(255, 255, 255); text-shadow: 0px 5px 3px #000000; margin-bottom: 1.3em;" >x0</h4>
+                                    </div>
+                                </li>
 
-                <div class="col3" style="margin-top: 5em; margin-left:66em;">
-                    <ul class="tg-list">
-                        <li class="tg-list-item">
-                            <h4 class="spc"> Battel Pass? </h4>
-                            <input class="tgl tgl-flip" id="bp" type="checkbox" />
-                            <label class="tgl-btn" data-tg-off="NO" data-tg-on="YES" for="bp"> </label>
-                        </li>
-    
-                        <li class="tg-list-item">
-                            <h4 class="spc"> Next banner? </h4>
-                            <input class="tgl tgl-flip" id="nb" type="checkbox" />
-                            <label class="tgl-btn" data-tg-off="NO" data-tg-on="YES" for="nb"> </label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col4" style="margin-top: 1em; margin-left:73em;">
-                    <div class="container1"> 
-                        <ul>
-                            <li>    
-                                <div>
-                                    <h4 class="prim_icon" id="Total_pr" style="font-size: 3em; color: rgb(255, 255, 255); margin-left: 3em; margin-top: 0px; text-shadow: 0px 5px 3px #000000;">x0</h4>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <h4 class="wish_icon" id="Total_wish" style="font-size: 3em; color: rgb(255, 255, 255); margin-left: 3em; text-shadow: 0px 5px 3px #000000;">x0</h4>
-                                </div>
-                            </li>
-                        </ul> 
-                    </div>
-                    <button class="button-46"  onclick = "findTotal()" role="button" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 30px; margin-bottom: -120px; "> Calculate </button>
-                </div>
-        </div>
-
+                                <li>
+                                    <div>
+                                        <h4 class="wish_icon" id="Total_wish" style="font-size: 3em; color: rgb(255, 255, 255); text-shadow: 0px 5px 3px #000000; margin-top: -1em;">x0</h4>
+                                    </div>
+                                </li>
+                            </ul> 
+                        </div>
+                        
+                        <button class="button-46"  onclick = "findTotal()" role="button" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 30px; margin-top: -1.5em; "> Calculate </button>
+                </div>   
+            </div>
     </body>
 
     <footer>
@@ -101,10 +90,3 @@
     </footer>
 
 </html>
-
-
-<!---
-                            <div>
-                            <img src="https://i.ibb.co/GpNZCYf/Item-Primogem.png" width="60" height="60" style="margin-left: 15em;" >
-                        </div>
-    --->

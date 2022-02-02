@@ -44,37 +44,15 @@ body{
     outline:none;
 }
 
-.col1{
-    position: relative;
-    top: 20%;
-    left: 30%;
-}
-
-.col2{
-    position: relative;
-    top: 30%;
-    left: 30%;
-}
-
-.col3{
-    position: relative;
-    top: 40%;
-    left: 42.1%;
-}
-
-.col4{
-    position: relative;
-    top: 50%;
-    left: 42.1%;
-}
-
 .spc{
+    position: relative;
+    left: 2.5em;
     font-size: 22px;
     border-style: solid;
-    background-color: rgba(247, 247, 243, 0.67);
+    background-color: rgba(255, 255, 255, 0.664);
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-    margin-bottom: 6%;
+    margin-bottom: 2%;
 }
 
 .spc1{
@@ -111,6 +89,8 @@ body{
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 15%;
+  position: relative;
+  left: 4.2em;
 }
 
 .button-46:active,
@@ -142,7 +122,7 @@ ul, li {
     align-items: center;
 }
 .tg-list-item {
-    margin: 0 2em;
+    margin: 0 1em;
 }
 h2 {
     color: #777;
@@ -189,6 +169,8 @@ h4 {
     transition: all 0.2s ease;
     font-family: sans-serif;
     perspective: 100px;
+    left: 3.45em;
+
 }
 .tgl-flip + .tgl-btn:after, .tgl-flip + .tgl-btn:before {
     display: inline-block;
@@ -263,28 +245,42 @@ h2:hover{
     1px 1px 0 #000;  
 }
 
+.parent {
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .child {
+    width: 470px;
+    height: 50px;
+    }
+
 .container {
-    display: grid; 
-    grid-template-columns: 1%; 
-    grid-template-rows: 1fr; 
-    grid-template-areas: 
-      "."
-      "."
-      "."
-      "."; 
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    
+
 }
+
 
 /**/
 .prim_icon{
+    position: relative;
     padding-left: 60px;
     background: url("https://i.ibb.co/GpNZCYf/Item-Primogem.png") no-repeat left;
     background-size: 65px;
+    left: 3em;
 }
 
 .wish_icon{
+    position: relative;
     padding-left: 60px;
     background: url("https://i.ibb.co/YZhGhd4/Item-Intertwined-Fate.png") no-repeat left;
     background-size: 65px;
+    left: 3em;
 }
 /**/
 
@@ -296,6 +292,7 @@ h2:hover{
 }
 
 .center {
+    
     text-align: center;
 }
 
